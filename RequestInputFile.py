@@ -1,3 +1,6 @@
-def req_Input():
+def req_Input(p_file):
     v_file=input("Enter the file name:")
-    return v_file
+    if v_file is None or v_file=='':
+        return p_file
+    else:
+        return v_file
